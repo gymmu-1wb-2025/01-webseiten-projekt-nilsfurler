@@ -1,0 +1,20 @@
+header,
+main,
+footer {
+  border: 1px solid black;
+}
+
+
+
+
+
+.grid-wrapper {
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 20% 1fr;
+    grid-template-rows: auto 1fr auto;
+    grid-template-areas:
+        "header nav"
+        "main main"
+        "footer footer";
+}
