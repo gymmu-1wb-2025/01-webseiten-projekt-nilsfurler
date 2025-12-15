@@ -7,7 +7,7 @@ footer {
 .grid-wrapper {
   display: grid;
   height: 100vh;
-  grid-template-columns: 20% 1fr;
+  grid-template-columns: 66% 1fr;
   grid-template-rows: auto 1fr auto;
   grid-template-areas:
     "header nav"
@@ -46,4 +46,22 @@ section {
 
 section:nth-child(even) {
   background-color: hsl(from rgb(236, 236, 151) h s calc(l + 10));
+}
+
+.icon-karriere {
+  width: 23px;
+  height: 23px;
+}
+
+.icon-nejmar {
+  width: 23px;
+  height: 23px;
+}
+
+.icon-erfolge {
+  width: 23px;
+  height: 23px;
+}
+.haupttitel {
+  font-size: 100;
 }
