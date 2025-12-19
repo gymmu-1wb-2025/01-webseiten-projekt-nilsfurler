@@ -1,7 +1,7 @@
 /*Gibt Header,Main,Footer einen Rahmen zur besseren Sichtbarkeit*/ header,
 main,
 footer {
-  border: 1px solid black;
+  border: 1px solid rgb(255, 255, 255);
 }
 
 /*Erstellt das Seitenlayout mit CSS Grid und ordnet das Header, Navigation, Inhalt und Footer an*/
