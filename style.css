@@ -1,0 +1,106 @@
+/*Gibt Header,Main,Footer einen Rahmen zur besseren Sichtbarkeit*/ header,
+main,
+footer {
+  border: 1px solid rgb(255, 255, 255);
+}
+
+/*Erstellt das Seitenlayout mit CSS Grid und ordnet das Header, Navigation, Inhalt und Footer an*/
+.grid-wrapper {
+  display: grid;
+  height: 100vh;
+  grid-template-columns: 65.75% 1fr;
+  grid-template-rows: auto 1fr auto;
+  grid-template-areas:
+    "header nav"
+    "main main"
+    "footer footer";
+}
+
+/*Erlaubt vertikales Scrollen im Hauptinhalt*/
+main {
+  overflow-y: scroll;
+}
+
+/*Stellt sicher das jeder Abschnitt mindestens die volle Höhe einnimmt*/
+section {
+  min-height: 100%;
+}
+
+/*Ordnet Text und Bild nebeneinander an*/
+.text-and-img-wrapper {
+  display: flex;
+}
+
+/*Legt eine feste Breite für Bilder im Text-Bild-Bereich fest*/
+.text-and-img-wrapper > img {
+  width: 390px;
+}
+
+/*Gestaltet den Navigationsbereich mit Hintergrundfarbe und Abstand*/
+nav {
+  background-color: rgb(51, 159, 92);
+  padding: 16px;
+  text-align: left;
+}
+
+/*Definiert Grundabstände und Hintergrundfarbe für Inhaltsabschnitte*/
+section {
+  margin: 0;
+  min-height: 90vh;
+  background-color: rgb(246, 246, 156);
+  padding: 20px;
+}
+
+/*Gibt jedem zweiten Abschnitt eine leicht andere Hintergrundsfarbe*/
+section:nth-child(even) {
+  background-color: hsl(from rgb(236, 236, 151) h s calc(l + 10));
+}
+
+/*Legt die Grösse des Icons fest*/
+.icon-karriere {
+  width: 23px;
+  height: 23px;
+}
+
+/*Legt die Grösse des Icons fest*/
+.icon-nejmar {
+  width: 23px;
+  height: 23px;
+}
+
+/* Auch hier wieder, legt die Grösse des Icons fest*/
+.icon-erfolge {
+  width: 23px;
+  height: 23px;
+}
+
+/*Titelgrösse*/
+h1 {
+  font-size: 60px;
+}
+
+/*Ordnet den Text und Bild nebeneinander*/
+.text-and-img-wrapper {
+  display: flex;
+  gap: 40px;
+  align-items: flex-start;
+}
+
+/*Gibt dem Textbereich den nötigen Platz*/
+.text-and-img-wrapper > div {
+  flex: 1;
+  min-width: 0;
+}
+
+/*Macht den Fliesstext gleichmässig und besser lesbar*/
+.text-and-img-wrapper p {
+  text-align: justify;
+  line-height: 1.6;
+}
+
+/*Entfernt Aufzählungszeichen, sowie Abstände, bei der Navigationsleiste*/
+.Navigationslink {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}

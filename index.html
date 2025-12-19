@@ -4,38 +4,234 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Eigene Webseite</title>
+    <title>Neymar Jr.</title>
 
     <link rel="stylesheet" href="style.css">
+    <script src="./main.js" defer></script>
   </head>
 
-  <body>
-    <header>
-      <h1>Webseite von ...</h1>
+  <body class="grid-wrapper">
+    <header style="grid-area: header">
+      <h1 class="haupttitel">Webseite über Neymar Jr.</h1>
+      <button onclick="createNewElement()">click me</button>
     </header>
+    <nav style="grid-area: nav">
+      <ul class="Navigationslink">
+        <li>
+          <!--Erstellt ein Icon für den Navigationslink Neymar Jr, bestehend aus einem Viereck -->
+          <a href="#neymar jr.">
+            <svg
+              class="icon-nejmar"
+              viewBox="0 0 100 100"
+              aria-label="icon-neymar"
+            >
+              <rect x="20" y="20" width="60" height="60" fill="#FFD700"/>
+            </svg>
+            Neymar Jr.</a
+          >
+        </li>
+        <li>
+          <!--Erstellt ein Icon für den Navigationslink Karriere, aus einem Rechteck und aus einem Dreieck. -->
+          <a href="#karriere"
+            ><svg class="icon-karriere" viewBox="0 0 25 25">
+              <polygon points="12.5,4 3,12 22,12"/>
+              <rect x="6" y="12" width="13" height="9"/>
+            </svg>
+            Karriere
+          </a>
+        </li>
 
-    <main>
-      <section>
-        <h2>Dies ist ein erster Abschnitt</h2>
-        Abschnitte haben immer einen Titel und dann den Text.
+        <li>
+          <!--auch dies erstellt ein Icon für den Navigationslink Erfolge, bestehend aus einem Kreis und einem Rechteck. -->
+          <a href="#erfolge"
+            ><svg class="icon-erfolge" viewBox="0 0 25 25">
+              <circle cx="12.5" cy="14" r="7" fill="gold"/>
+              <rect x="9" y="2" width="7" height="8" fill="red"/>
+            </svg>
+            Erfolge</a
+          >
+        </li>
+      </ul>
+    </nav>
+
+    <main style="grid-area: main">
+      <section id="neymar jr.">
+        <div class="text-and-img-wrapper">
+          <div>
+            <h2>Wer ist Neymar Jr.?</h2>
+            <p>
+              Neymar Jr. wurde am 5. Februar 1992 in Mogi das Cruzes, in
+              Brasilien geboren.
+            </p>
+            <p>
+              Sein voller Name lautet Neymar da Silva Santos Júnior.Er ist ein
+              brasilianischer Fußballspieler, der meist als Offensivspieler —
+              also Stürmer oder Offensiv im Mittelfeld — agiert.
+            </p>
+            <p>
+              Neymar gilt als einer der herausragendsten Spieler seiner
+              Generation: Er ist bekannt für sein Dribbling, seine technische
+              Fertigkeit, Kreativität und seine Torgefährlichkeit.
+            </p>
+            <p>
+              Er wird oft als Teil der „jogo bonito“-Tradition Brasiliens
+              gesehen — also schönem, offensiv orientiertem, technisch
+              versierten Fußball.
+            </p>
+            <p>
+              Neymar wird oft als lebensfroher und emotionaler Mensch
+              beschrieben. Er zeigt auf und neben dem Spielfeld offen seine
+              Gefuehle und gilt als jemand, der gerne im Mittelpunkt steht.
+              Diese Art macht ihn fuer viele Fans sympathisch, wird aber auch
+              unterschiedlich wahrgenommen.
+            </p>
+            <p>
+              Seine Familie spielt eine wichtige Rolle in seinem Leben.
+              Besonders das enge Verhaeltnis zu seinem Vater ist bekannt, der
+              ihn seit jungen Jahren unterstuetzt und begleitet hat. Neymar
+              betont in Interviews haeufig, wie wichtig ihm Familie und Heimat
+              sind.
+            </p>
+            <p>
+              Abseits des Fussballs interessiert sich Neymar unter anderem fuer
+              Musik, Mode und soziale Medien. Er teilt Einblicke in seinen
+              Alltag und seine Interessen regelmaessig online und erreicht damit
+              ein sehr grosses Publikum.
+            </p>
+            <p>
+              Durch seine Art, sein Auftreten und seinen Stil hat Neymar viele
+              junge Menschen beeinflusst. Er gilt fuer viele als Vorbild, nicht
+              nur wegen seiner sportlichen Faehigkeiten, sondern auch wegen
+              seiner individuellen Ausdrucksweise und Persoenlichkeit.
+            </p>
+          </div>
+          <img src="https://wallpapercave.com/wp/wp1902812.jpg" alt="">
+        </div>
+      </section>
+      <section id="karriere">
+        <div class="text-and-img-wrapper">
+          <div>
+            <h2>Karriere</h2>
+            <p>
+              Die Karriere von Neymar lässt sich in mehrere große Phasen
+              einteilen — von seinem Beginn in Brasilien über den Aufstieg in
+              Europa bis zu seiner Rückkehr in die Heimat.
+            </p>
+            <p>
+              Santos FC (2009-2013) Neymar startete seine Profikarriere bei
+              Santos FC in Brasilien. Er debütierte als Jugendlicher (etwa mit
+              17 Jahren). In dieser Zeit entwickelte sich schnell sein Ruf als
+              außergewöhnliches Talent.Mit Santos gewann er unter anderem die
+              südamerikanische Spitzenwertung und etablierte sich als einer der
+              jungen Stars.
+            </p>
+            <p>
+              Wechsel nach Europa - FC Barcelona (2013-2017) 2013 ging Neymar
+              nach Europa und unterschrieb bei Barcelona. Der Transfer galt als
+              großer Schritt in seiner Karriere. Bei Barcelona bildete er mit
+              Lionel Messi und Luis Suárez das legendäre Angriffstrio „MSN“.
+              Dieses Trio wurde berühmt für seine enorme Offensivpower und
+              Spielweise. In seiner Zeit dort erzielte er viele Tore und gewann
+              mit dem Klub mehrere Titel.
+            </p>
+
+            <p>
+              2017 wechselte Neymar zu Paris Saint-Germain - für eine damals
+              rekordverdächtige Ablösesumme von 222 Millionen Euro, was ihn zum
+              teuersten Fußballspieler der Welt machte. Bei PSG war er einige
+              Jahre lang eine zentrale Figur und erzielte viele Tore. Allerdings
+              war seine Zeit dort auch geprägt von Verletzungen — was seine
+              Spielzeit und Konstanz mitunter einschränkte.
+            </p>
+
+            <p>2023 wechselte Neymar zu Al Hilal in Saudi-Arabien.</p>
+
+            <p>
+              Anfang 2025 kehrte er zurück zu Santos — sein Heimatverein — was
+              als emotionaler Schritt zurück zu seinen Wurzeln gesehen wurde.
+              Diese Rückkehr wird sowohl als Chance verstanden, seine Leistung
+              neu zu finden, als auch als symbolischer Schlussstein seiner
+              Karriere.
+            </p>
+
+            <p>
+              Neymar debütierte 2010 für die A-Nationalmannschaft Brasiliens.Der
+              Höhepunkt seiner laufbahn bei der Brasilianischen
+              nationalmannschaft war 2014, bei der Heim-WM in Brasilien. Alles
+              schien darauf hin, dass Neymar ins Finale käme, doch dann zog er
+              sich im Viertelfinal gegen Kolumbien eine sehr schwere
+              <a href="./unterseiten/Neymars-Verletzung.html">Verletzung</a>
+              bei. Danach war er über viele Jahre hinweg einer der wichtigsten
+              Offensivspieler in der Brasilianischen Fussballgeschichte,
+              erzielte zahlreiche Tore und trug zu grossen Turnierteilnahmen
+              bei.
+            </p>
+          </div>
+          <img
+            src="https://i.pinimg.com/736x/dd/3a/09/dd3a09858cbfbbe7fcee82ee937975ba.jpg"
+            alt=""
+          >
+        </div>
       </section>
 
-      <section>
-        <h2>Das p-Tag</h2>
-        <p>Der Text sollte immer in ein p gepackt werden.</p>
-        <p>Mit dem p ist es auch möglich einen Zeilenumbruch zu haben.</p>
-      </section>
+      <section id="erfolge">
+        <div class="text-and-img-wrapper">
+          <div>
+            <h2>Erfolge</h2>
+            <p>
+              Neymar Jr. hat in seiner Karriere viele Titel, Rekorde und
+              Auszeichnungen gesammelt — sowohl auf Klub- als auch auf
+              Nationalmannschaftsebene.
+            </p>
 
-      <section>
-        <h2>Unterseiten verlinken</h2>
-        <p>
-          Wir können auch weitere Webseiten verknüpfen, dafür müssen wir nur
-          einen Link angeben, wie zum Beispiel zu den
-          <a href="./unterseiten/hobbies.html">Hobbies</a>.
-        </p>
+            <p>
+              Hier sind einige der wichtigsten: Er gilt als einer der besten
+              Fußballer seiner Generation. Mit Barcelona gewann er u.a. die La
+              Liga, den UEFA Champions League und mehrfach den Copa del Rey.
+            </p>
+
+            <p>Bei PSG holte er mehrere nationale Meistertitel und Pokale.</p>
+
+            <p>
+              Für die brasilianische Nationalmannschaft wurde er
+              Rekord-Torschütze — mit über 79 Toren und vielen weiteren
+              Einsätzen. Neymar brachte mit seinem Spielstil häufig „schönen
+              Fußball“, Kreativität und spektakuläre Momente — das machte ihn zu
+              einem der unterhaltsamsten Spieler des modernen Fußballs.
+            </p>
+            <p>
+              Ein weiterer wichtiger Aspekt seiner Erfolge ist die hohe Anzahl
+              an individuellen Auszeichnungen, die Neymar im Laufe der Jahre
+              erhalten hat. Er wurde mehrfach in internationale Bestenlisten
+              aufgenommen und zaehlte regelmaessig zu den Nominierten fuer
+              grosse Fussballpreise.
+            </p>
+            <p>
+              Auch statistisch hinterliess Neymar deutliche Spuren. Neben seinen
+              vielen Toren bereitete er zahlreiche Treffer vor und war oft
+              entscheidend an wichtigen Spielsituationen beteiligt. Seine
+              Kombination aus Torgefahr und Spieluebersicht machte ihn fuer
+              seine Teams besonders wertvoll.
+            </p>
+            <p>
+              Darueber hinaus zeichnen sich Neymars Erfolge nicht nur durch
+              Titel aus, sondern auch durch seinen Einfluss auf Spiele. Er war
+              haeufig der Spieler, der mit Einzelaktionen Spiele entschied oder
+              den Unterschied ausmachte.
+            </p>
+            <p>
+              Seine Leistungen auf internationaler Ebene sorgten dafuer, dass er
+              weltweit Anerkennung erhielt und bis heute als einer der
+              praegendsten Offensivspieler seiner Zeit gilt.
+            </p>
+          </div>
+          <img
+            src="https://i.pinimg.com/736x/5b/fc/6b/5bfc6b33768e5d2509cddc832e59c424.jpg"
+          >
+        </div>
       </section>
     </main>
 
-    <footer>Meine Webseite</footer>
+    <footer style="grid-area: footer">Meine Webseite</footer>
   </body>
 </html>
